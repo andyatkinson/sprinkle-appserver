@@ -7,7 +7,7 @@ require 'packages/ruby'
 require 'packages/database'
 require 'packages/redis'
 
-policy :ruby_on_rails_stack, :roles => :app do
+policy :appserver, :roles => :app do
   requires :build_essential
   requires :iptables
   requires :scm  

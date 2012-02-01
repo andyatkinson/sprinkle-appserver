@@ -1,4 +1,4 @@
-My rails server setup scripts
+My rails appserver setup scripts using Sprinkle
 
 What does it install?
 ---------------------
