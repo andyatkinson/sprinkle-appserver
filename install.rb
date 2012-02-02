@@ -9,6 +9,7 @@ require 'packages/redis'
 
 policy :appserver, :roles => :app do
   requires :build_essential
+  requires :ssh
   requires :iptables
   requires :scm  
   requires :memcached

@@ -38,7 +38,6 @@ Additional reading, sources for these scripts, attribution and thanks
  
 TODO
 ----------
-(test the ssh package) I borrowed the ssh package and conf file after setting it up manually on a box, need to test the configuration in this repo
 (test the deploy package) borrowed the deploy user create/setup/permissions package and need to test it, could be part of bootstrapping rails app initialization
  
 Running as root
