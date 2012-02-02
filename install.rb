@@ -1,4 +1,5 @@
 require 'packages/build_essential'
+require 'packages/ssh'
 require 'packages/iptables'
 require 'packages/scm'
 require 'packages/memcached'
