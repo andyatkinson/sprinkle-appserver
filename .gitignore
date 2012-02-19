@@ -4,3 +4,4 @@
 *.swp
 *.out
 /deploy.rb
+config.rb

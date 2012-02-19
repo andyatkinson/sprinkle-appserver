@@ -10,6 +10,8 @@ What does it install?
  - ruby
  - mysql
  - git
+ - (broken) copy ssh config and sshd config files
+ - (broken) add deploy user
  
 Test the configuration
 ----------------------
@@ -18,7 +20,7 @@ Test the configuration
 Installation
 ------------
   setup: the memcache package right now as a deploy:deploy user and group, so you will have to `adduser deploy` on the box
-  or change that as necessary. 
+  or change that as necessary. `cp config.example.rb config.rb` and customize with your settings.
   
   1. `gem install sprinkle`
   2. `cp deploy.example.rb deploy.rb` and customize.

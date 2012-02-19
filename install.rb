@@ -1,3 +1,4 @@
+require 'config'
 require 'packages/build_essential'
 require 'packages/ssh'
 require 'packages/iptables'
@@ -7,10 +8,11 @@ require 'packages/nginx'
 require 'packages/ruby'
 require 'packages/database'
 require 'packages/redis'
+require 'packages/deploy'
 
 policy :appserver, :roles => :app do
   requires :build_essential
-  requires :ssh
+  #requires :ssh
   requires :iptables
   requires :scm  
   requires :memcached
@@ -18,6 +20,7 @@ policy :appserver, :roles => :app do
   requires :database
   requires :redis
   requires :ruby
+  #requires :deploy
 end
 
 deployment do
