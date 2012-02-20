@@ -41,6 +41,13 @@ Additional reading, sources for these scripts, attribution and thanks
 TODO
 ----------
 (test the deploy package) borrowed the deploy user create/setup/permissions package and need to test it, could be part of bootstrapping rails app initialization
+
+Issues
+------
+On Ubuntu 10.04.4 LTS and Bundler 1.0.22 I was getting:
+    `/usr/lib/ruby/gems/1.8/gems/bundler-1.0.22/bin/bundle:14: uninitialized constant Bundler (NameError)`
+
+Resolved like this: https://rails.lighthouseapp.com/projects/8994/tickets/3990-no-such-file-to-load-bundler-loaderror-in-rails-300beta#ticket-3990-20
  
 Running as root
 ---------------
