@@ -1,2 +1,9 @@
+HOST = 'mysite.com'
+HOSTIP = '255.255.255.255'
+ROOT_USER = 'root'
+ROOT_USER_PASSWORD = 'my_root_password'
 DEPLOY_USER = 'deploy'
-DEPLOY_USER_PASSWORD = '2f4c26'
+DEPLOY_USER_PASSWORD = 'my_deploy_password'
+APP_NAME = 'mysite'
+DB_NAME = "#{APP_NAME}_production"
+GIT_HOST = "domain.com"

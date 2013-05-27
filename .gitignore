@@ -5,3 +5,4 @@
 *.out
 /deploy.rb
 config.rb
+assets/nginx.conf

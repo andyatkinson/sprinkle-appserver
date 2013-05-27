@@ -1,4 +1,8 @@
-My rails appserver setup scripts using Sprinkle
+Setup scripts using the Sprinkle tool to automate the setup of an application server on Linux. Supports multiple applications. Simple server with one database.
+
+How does this thing work?
+-------------------------
+Sprinkle uses "packages" which are things to install. They can be installed from source or from a package manager. Package installation scripts are in the "packages" directory and if they require a static or generated configuration file, those can be found in the "assets" directory.
 
 What does it install?
 ---------------------
@@ -32,15 +36,19 @@ Additional reading, sources for these scripts, attribution and thanks
  - [Sprinkle Documentation](http://rubydoc.info/github/crafterm/sprinkle/master)
  - Thoughtbot [Sprinkle scripts](https://github.com/thoughtbot/continuous_sprinkles)
  - [Example nginx config](http://brainspl.at/nginx.conf.txt)
- - https://github.com/karmi/rails-deployment-setups-sprinkle.git
+ - [sprinkle scripts](https://github.com/karmi/rails-deployment-setups-sprinkle)
  - [Tristan Dunn sprinkle linode setup](https://github.com/tristandunn/sprinkle-linode)
  - [Passenger stack video and site](http://benschwarz.github.com/passenger-stack/)
  - [Unicorn and rails detailed deployment guide](http://tech.tomgoren.com/archives/245)
  - Sprinkle [another Rails Nginx unicorn postgres stack](https://github.com/Shift81/sprinkler)
+ - [Nginx+Unicorn configuration for multi-app servers](http://codetunes.com/2012/nginxunicorn-configuration-for-multi-app-servers)
  
 TODO
 ----------
 (test the deploy package) borrowed the deploy user create/setup/permissions package and need to test it, could be part of bootstrapping rails app initialization
+NEXT: add upstart script for nginx
+NEXT: add monit to monitor processes
+LATER: add screen,curl,vim under a utilities package
 
 Issues
 ------
