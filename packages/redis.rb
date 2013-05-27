@@ -1,10 +1,11 @@
 package :redis do
   description "Redis"
-  version "2.2.2"
-  source "http://redis.googlecode.com/files/redis-#{version}.tar.gz" do
+  version '2.2.2'
+  # TODO "version" not working
+  source "http://redis.googlecode.com/files/redis-2.2.2.tar.gz" do
     conf = IO.read("assets/redis.conf")
     custom_install "make && make install"
-    post :install, %{cp /usr/local/build/redis-#{version}/utils/redis_init_script /etc/init.d/redis}
+    post :install, %{cp /usr/local/build/redis-2.2.2/utils/redis_init_script /etc/init.d/redis}
     post :install, %{chmod +x /etc/init.d/redis}
     post :install, %{mkdir -p /var/redis}
     post :install, %{update-rc.d redis defaults}

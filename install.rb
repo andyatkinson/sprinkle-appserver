@@ -20,11 +20,13 @@ policy :appserver, :roles => :app do
   requires :database
   requires :redis
   requires :ruby
-  #requires :deploy
+  requires :deploy
 end
 
 deployment do
-  delivery :capistrano
+  delivery :capistrano do
+    recipes 'deploy'
+  end
 
   source do
     prefix   '/usr/local'
